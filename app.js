@@ -32,3 +32,14 @@ app.use('/', index);
 require('./error-handling')(app);
 
 module.exports = app;
+
+
+//movies route
+app.get('/movies', (req, res) => {
+  res.render('movies.hbs');
+});
+
+//movies:id route
+app.get('/movies:id', (req, res) => {
+  res.render('see-more.hbs');
+});
