@@ -36,10 +36,10 @@ module.exports = app;
 
 //movies route
 app.get('/movies', (req, res) => {
-  res.render('movies.hbs');
+  res.render('./views/movies.hbs');
 });
 
 //movies:id route
-app.get('/movies:id', (req, res) => {
-  res.render('see-more.hbs');
+app.get('/movies/:id', (req, res) => {
+  res.render('./views/id.hbs');
 });
